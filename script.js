@@ -18,6 +18,8 @@ function createBoxEntity(color) {
     return entity
 }
 
-
+for (var i =0; i < 2; i++) {
+    document.getElementById("scene").appendChild(createBoxEntity("red"))
+}
 
 
