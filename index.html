@@ -5,10 +5,20 @@
     <script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>
   </head>
   <body>
-    <a-scene id = "scene">
-      
-      <a-sphere position="0 1.25 -5" radius="1.25" color="#EF2D5E"></a-sphere>
-      <a-cylinder position="1 0.75 -3" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder>
+    <a-scene id = "snowman">
+      <!-- BODY-->
+      <a-sphere position="0 1.25 -5" radius="1.25" color="white"></a-sphere>
+      <a-sphere position="0 3 -5" radius="1" color="white"></a-sphere>
+      <a-sphere position="0 4.5 -5" radius="0.75" color="white"></a-sphere>
+      <!-- EYES -->
+      <a-sphere position="-0.3 4.5 -4.25" radius="0.1" color="black"></a-sphere>
+      <a-sphere position="0.3 4.5 -4.25" radius="0.1" color="black"></a-sphere>
+      <!-- NOSE -->
+      <a-cone position="0 4.3 -4.3" radius-bottom="0.4" rotation="90" color="orange"></a-cone>
+      <!-- HAT -->
+      <a-cylinder position="0 5.5 -5" radius="0.5" color="black"></a-cylinder>
+      <a-cylinder position="0 5.3 -5" radius="0.7" height="0.1" color="black"></a-cylinder>
+
       <a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="#7BC8A4"></a-plane>
       <a-sky color="#ECECEC"></a-sky>
     </a-scene>
